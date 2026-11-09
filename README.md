@@ -42,7 +42,7 @@ npm install
 | `npx webpack` (or `npm run build`) | builds the distributable into `dist/` |
 | `npm start` | serves `dist/` with webpack-dev-server and opens the browser |
 
-Run `npx webpack` and open `dist/index.html`. The page loads the bundle `main.js` that Webpack builds from `src/script.js`.
+Open `src/index.html` directly in a browser for development (it loads `script.js`), or run `npx webpack` and open `dist/index.html`, where the page loads the bundle `main.js`.
 
 ## Formulas
 
