@@ -1,5 +1,5 @@
 {
-  "name": "interest-rate-calculator",
+  "name": "intermediate_webdev_finalproject",
   "version": "1.0.0",
   "description": "Interest Rate Calculator - simple interest and total payable amount, with Jasmine tests and a Webpack build",
   "private": true,

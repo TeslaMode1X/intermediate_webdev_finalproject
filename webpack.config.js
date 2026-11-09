@@ -7,13 +7,13 @@ module.exports = {
     entry: './src/script.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        // Same file name the template references in <script defer src="script.js">
-        filename: 'script.js',
+        // Bundle name referenced by the template: <script defer src="main.js">
+        filename: 'main.js',
         clean: true,
     },
     plugins: [
         // Copies src/index.html to dist/. The template already links
-        // favicon.ico, style.css and script.js by name, so nothing is injected.
+        // favicon.ico, style.css and main.js by name, so nothing is injected.
         new HtmlWebpackPlugin({
             template: './src/index.html',
             favicon: './src/favicon.ico',
