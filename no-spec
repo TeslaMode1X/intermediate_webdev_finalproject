@@ -1,0 +1,9 @@
+$ npx jasmine
+Randomized with seed 80234
+Started
+
+
+No specs found
+Finished in 0.003 seconds
+Incomplete: No specs found
+Randomized with seed 80234 (jasmine --random=true --seed=80234)
