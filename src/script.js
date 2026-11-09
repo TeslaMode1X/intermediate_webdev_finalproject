@@ -47,12 +47,12 @@ const readNumberInput = (id) => {
  * interest and total, and renders the result.
  */
 const calculate = () => {
-  const principal = readNumberInput('principal');
-  const rate = readNumberInput('rate');
-  const time = readNumberInput('time');
+  const p = readNumberInput('principal');
+  const r = readNumberInput('rate');
+  const t = readNumberInput('time');
 
-  const simpleInterest = calculateSimpleInterest(principal, rate, time);
-  const totalAmount = calculateTotalPayableAmount(principal, simpleInterest);
+  const simpleInterest = calculateSimpleInterest(p, r, t);
+  const amount = calculateTotalPayableAmount(p, simpleInterest);
 
   const result = document.getElementById('result');
   if (!result) {
@@ -60,9 +60,9 @@ const calculate = () => {
   }
 
   result.innerHTML = `
-    <div>Principal Amount: <span>${principal.toFixed(2)}</span></div>
+    <div>Principal Amount: <span>${p.toFixed(2)}</span></div>
     <div>Total Interest: <span>${simpleInterest.toFixed(2)}</span></div>
-    <div>Total Amount: <span>${totalAmount.toFixed(2)}</span></div>`;
+    <div>Total Amount: <span>${amount.toFixed(2)}</span></div>`;
 };
 
 // Expose `calculate` for the inline onclick handler. With Webpack the code is
